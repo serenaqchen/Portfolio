@@ -16,14 +16,14 @@ html {
   scroll-behavior: smooth;
 }
 .navbar {
-  background-color: whitesmoke !important;
+  background-color: white !important;
 }
 .navbar .navbar-nav {
   margin: auto 0 auto auto;
 }
 
 body{
-  background-color: whitesmoke;
+  background-color: white;
 }
 .container {
   padding-top: 10%;
@@ -31,6 +31,25 @@ body{
   align-items: center;
   justify-content: center;
   /* border: 3px solid red; */
+}
+.cardContainer{
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  margin: 20px;
+  height: 100px;
+  width: auto;
+}
+.custom-card-btn{
+  color:white;
+  background-color: #c3c1ab;
+}
+.custom-card-btn:hover{
+  color:white;
+  background-color: #A3A085;
 }
 .left {
   position: relative;
@@ -48,6 +67,45 @@ body{
   justify-content: center;
   /* border: 3px solid black; */
 }
+.AMleft{
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 3px solid blue; */
+}
+
+.AMright{
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#greenArc{
+  position: relative;
+  width: 60%;
+  bottom: 50px;
+  height: auto;
+  left: 100px;
+}
+#picOfMe{
+  position: absolute;
+  max-width:45%;
+  top: 80px;
+  left: 120px;
+  height:auto;
+}
+#picOfMe2{
+  position: absolute;
+  max-width: 40%;
+  top: 250px;
+  left: 390px;
+  height: auto;
+}
+
 #Homepage{
   min-height: 100vh;
   width: 100%;
@@ -148,6 +206,10 @@ body{
   background: whitesmoke;
   padding: 0 15px;
 }
+.CMright .input-box textarea{
+  padding-top: 10px;
+}
+
 .CMright .message-box{
   min-height: 100px;
   margin-top: 6px;
