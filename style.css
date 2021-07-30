@@ -32,6 +32,25 @@ body{
   justify-content: center;
   /* border: 3px solid red; */
 }
+.cardContainer{
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  margin: 20px;
+  height: 100px;
+  width: auto;
+}
+.custom-card-btn{
+  color:white;
+  background-color: #c3c1ab;
+}
+.custom-card-btn:hover{
+  color:white;
+  background-color: #A3A085;
+}
 .left {
   position: relative;
   width: 50%;
@@ -187,9 +206,10 @@ body{
   background: whitesmoke;
   padding: 0 15px;
 }
-.CMright .input-box textarea::placeholder {  
-  padding-top: 10px; 
-} 
+.CMright .input-box textarea{
+  padding-top: 10px;
+}
+
 .CMright .message-box{
   min-height: 100px;
   margin-top: 6px;
