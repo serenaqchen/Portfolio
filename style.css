@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 /* font-family: 'Satisfy', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Molle:ital@1&family=Satisfy&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -22,7 +23,7 @@ html {
   margin: auto 0 auto auto;
 }
 
-body{
+body {
   background-color: white;
 }
 .container {
@@ -30,26 +31,25 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 3px solid red; */
 }
-.cardContainer{
+.cardContainer {
   padding-top: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.card{
+.card {
   margin: 20px;
   height: 100px;
   width: auto;
 }
-.custom-card-btn{
-  color:white;
+.custom-card-btn {
+  color: white;
   background-color: #c3c1ab;
 }
-.custom-card-btn:hover{
-  color:white;
-  background-color: #A3A085;
+.custom-card-btn:hover {
+  color: white;
+  background-color: #a3a085;
 }
 .left {
   position: relative;
@@ -57,7 +57,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 3px solid blue; */
 }
 .right {
   width: 50%;
@@ -65,18 +64,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 3px solid black; */
 }
-.AMleft{
-  position: relative;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* border: 3px solid blue; */
-}
-
-.AMright{
+.AMleft {
   position: relative;
   width: 50%;
   display: flex;
@@ -84,21 +73,29 @@ body{
   justify-content: center;
 }
 
-#greenArc{
+.AMright {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#greenArc {
   position: relative;
   width: 60%;
   bottom: 50px;
   height: auto;
   left: 100px;
 }
-#picOfMe{
+#picOfMe {
   position: absolute;
-  max-width:45%;
+  max-width: 45%;
   top: 80px;
   left: 120px;
-  height:auto;
+  height: auto;
 }
-#picOfMe2{
+#picOfMe2 {
   position: absolute;
   max-width: 40%;
   top: 250px;
@@ -106,7 +103,7 @@ body{
   height: auto;
 }
 
-#Homepage{
+#Homepage {
   min-height: 100vh;
   width: 100%;
 }
@@ -115,7 +112,7 @@ body{
   width: 100%;
   background-color: #e9e4df;
 }
-#blog{
+#blog {
   min-height: 100vh;
   width: 100%;
 }
@@ -124,30 +121,32 @@ body{
   width: 100%;
   background-color: #e9e4df;
 }
-#contactMe{
+
+/* CSS for contact me section */
+#contactMe {
   min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contactMeContainer{
+.contactMeContainer {
   width: 80%;
   background: #e9e4df;
   border-radius: 6px;
   padding: 20px 60px 40px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.contactMeContainer .CmContent{
+.contactMeContainer .CmContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.CmContent .CMleft .details{
+.CmContent .CMleft .details {
   margin: 14px;
   text-align: center;
 }
-.contactMeContainer .CmContent .CMleft{
+.contactMeContainer .CmContent .CMleft {
   width: 25%;
   height: 100%;
   display: flex;
@@ -156,49 +155,46 @@ body{
   margin-top: 15px;
   position: relative;
 }
-.contactMeContainer .CmContent .CMleft::before{
-  content: '';
+.contactMeContainer .CmContent .CMleft::before {
+  content: "";
   position: absolute;
-  height:  70%;
+  height: 70%;
   width: 1px;
-  right:  -15px;
+  right: -15px;
   top: 50%;
   transform: translateY(-50%);
   background: black;
 }
 
-.CmContent .CMleft .details i{
+.CmContent .CMleft .details i {
   font-size: 30px;
   margin-bottom: 10px;
-  /* color:white; */
 }
-.CmContent .CMleft .details .topic{
+.CmContent .CMleft .details .topic {
   font-size: 18px;
   font-weight: 500;
 }
 .CmContent .CMleft .details .text-one,
-.CmContent .CMleft .details .text-two{
+.CmContent .CMleft .details .text-two {
   font-size: 14px;
   color: darkgray;
 }
 
-
-
-.contactMeContainer .CmContent .CMright{
+.contactMeContainer .CmContent .CMright {
   width: 75%;
   margin-left: 75px;
 }
-.CmContent .CMright .topic-text{
+.CmContent .CMright .topic-text {
   font-size: 23px;
   font-weight: 600;
 }
-.CMright .input-box{
+.CMright .input-box {
   height: 50px;
   width: 100%;
   margin: 12px 0;
 }
 .CMright .input-box input,
-.CMright .input-box textarea{
+.CMright .input-box textarea {
   height: 100%;
   width: 100%;
   border: none;
@@ -206,19 +202,19 @@ body{
   background: whitesmoke;
   padding: 0 15px;
 }
-.CMright .input-box textarea{
+.CMright .input-box textarea {
   padding-top: 10px;
 }
 
-.CMright .message-box{
+.CMright .message-box {
   min-height: 100px;
   margin-top: 6px;
 }
-.CMright .button{
+.CMright .button {
   display: inline-block;
   margin-top: 10px;
 }
-.CMright .button2 input[type="button"]{
+.CMright .button2 input[type="button"] {
   color: black;
   font-size: 18px;
   outline: none;
@@ -229,42 +225,40 @@ body{
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button2 input[type="button"]:hover{
+.button2 input[type="button"]:hover {
   background: #c3c1ab;
 }
 
 @media (max-width: 950px) {
-  .contactMeContainer{
+  .contactMeContainer {
     width: 90%;
     padding: 30px 35px 4opx 35px;
   }
 }
 @media (max-width: 820px) {
-  .contactMeContainer{
+  .contactMeContainer {
     margin: 40px 0;
     height: 100%;
-  }  
-  .contactMeContainer .CmContent{
+  }
+  .contactMeContainer .CmContent {
     flex-direction: column-reverse;
   }
-  .contactMeContainer .CmContent .CMleft{
-    width:  100%;
+  .contactMeContainer .CmContent .CMleft {
+    width: 100%;
     flex-direction: row;
     margin-top: 40px;
     justify-content: center;
     flex-wrap: wrap;
   }
-  .contactMeContainer .CmContent .CMleft::before{
+  .contactMeContainer .CmContent .CMleft::before {
     display: none;
   }
-  .contactMeContainer .CmContent .CMright{
+  .contactMeContainer .CmContent .CMright {
     width: 100%;
     margin-left: 0%;
   }
 }
-
-
-
+/* end of CSS for contact me */
 
 .container h1 {
   color: #c3c1ab;
@@ -325,5 +319,3 @@ body{
   opacity: 1;
   right: 0;
 }
-
-
