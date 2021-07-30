@@ -2,9 +2,9 @@
 /* font-family: 'Antic Didone', serif; */
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 /* font-family: 'Questrial', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 /* font-family: 'Satisfy', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Molle:ital@1&family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Molle:ital@1&family=Satisfy&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -12,78 +12,203 @@
   font-family: "Questrial", sans-serif;
 }
 
-/* html {
-  font-family: "Questrial", sans-serif;
-} */
-.navbar{
-    background-color: whitesmoke !important;
+html {
+  scroll-behavior: smooth;
 }
-.navbar .navbar-nav{
-    margin: auto 0 auto auto;
+.navbar {
+  background-color: whitesmoke !important;
+}
+.navbar .navbar-nav {
+  margin: auto 0 auto auto;
 }
 
-section {
-  min-height: 100vh;
-  width: 100%;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+body{
   background-color: whitesmoke;
-  /* border: 3px solid green; */
 }
 .container {
-    padding-top: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border: 3px solid red; */
+  padding-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 3px solid red; */
 }
 .left {
-    position: relative;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border: 3px solid blue; */
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 3px solid blue; */
 }
 .right {
-    width: 50%;
-    margin-left: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border: 3px solid black; */
+  width: 50%;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 3px solid black; */
+}
+#Homepage{
+  min-height: 100vh;
+  width: 100%;
+}
+#aboutMe {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #e9e4df;
 }
 #blog{
-    background-color: #e9e4df;
+  min-height: 100vh;
+  width: 100%;
 }
-#projects{
-    min-height: 80vh;
+#projects {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #e9e4df;
 }
-
 #contactMe{
-    background-color: #e9e4df;
-    
-}
-
-.container h1{
-    color: #C3C1AB;
-    font-size: 45px;
-}
-.line-break {
-    width: 20%;
-  }
-form{
-    width: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contactMeContainer{
-    display: flex;
-    justify-content: flex-start;
+  width: 80%;
+  background: #e9e4df;
+  border-radius: 6px;
+  padding: 20px 60px 40px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.CMright{
-    padding-top: 20%;
-    margin-left: 20%;
+.contactMeContainer .CmContent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+.CmContent .CMleft .details{
+  margin: 14px;
+  text-align: center;
+}
+.contactMeContainer .CmContent .CMleft{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.contactMeContainer .CmContent .CMleft::before{
+  content: '';
+  position: absolute;
+  height:  70%;
+  width: 1px;
+  right:  -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+}
+
+.CmContent .CMleft .details i{
+  font-size: 30px;
+  margin-bottom: 10px;
+  /* color:white; */
+}
+.CmContent .CMleft .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.CmContent .CMleft .details .text-one,
+.CmContent .CMleft .details .text-two{
+  font-size: 14px;
+  color: darkgray;
+}
+
+
+
+.contactMeContainer .CmContent .CMright{
+  width: 75%;
+  margin-left: 75px;
+}
+.CmContent .CMright .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+}
+.CMright .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.CMright .input-box input,
+.CMright .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background: whitesmoke;
+  padding: 0 15px;
+}
+.CMright .message-box{
+  min-height: 100px;
+  margin-top: 6px;
+}
+.CMright .button{
+  display: inline-block;
+  margin-top: 10px;
+}
+.CMright .button2 input[type="button"]{
+  color: black;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: whitesmoke;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button2 input[type="button"]:hover{
+  background: #c3c1ab;
+}
+
+@media (max-width: 950px) {
+  .contactMeContainer{
+    width: 90%;
+    padding: 30px 35px 4opx 35px;
+  }
+}
+@media (max-width: 820px) {
+  .contactMeContainer{
+    margin: 40px 0;
+    height: 100%;
+  }  
+  .contactMeContainer .CmContent{
+    flex-direction: column-reverse;
+  }
+  .contactMeContainer .CmContent .CMleft{
+    width:  100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .contactMeContainer .CmContent .CMleft::before{
+    display: none;
+  }
+  .contactMeContainer .CmContent .CMright{
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+
+
+
+.container h1 {
+  color: #c3c1ab;
+  font-size: 45px;
+}
+
 #greenRec {
   width: 100%;
   height: auto;
@@ -95,6 +220,48 @@ form{
   position: absolute;
   top: 5%;
   left: 5%;
+}
+
+.button {
+  padding: 10px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #c3c1ab;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: white;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: white;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 
