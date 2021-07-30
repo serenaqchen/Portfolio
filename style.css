@@ -16,14 +16,14 @@ html {
   scroll-behavior: smooth;
 }
 .navbar {
-  background-color: whitesmoke !important;
+  background-color: white !important;
 }
 .navbar .navbar-nav {
   margin: auto 0 auto auto;
 }
 
 body{
-  background-color: whitesmoke;
+  background-color: white;
 }
 .container {
   padding-top: 10%;
