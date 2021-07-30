@@ -48,6 +48,45 @@ body{
   justify-content: center;
   /* border: 3px solid black; */
 }
+.AMleft{
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 3px solid blue; */
+}
+
+.AMright{
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#greenArc{
+  position: relative;
+  width: 60%;
+  bottom: 50px;
+  height: auto;
+  left: 100px;
+}
+#picOfMe{
+  position: absolute;
+  max-width:45%;
+  top: 80px;
+  left: 120px;
+  height:auto;
+}
+#picOfMe2{
+  position: absolute;
+  max-width: 40%;
+  top: 320px;
+  left: 390px;
+  height: auto;
+}
+
 #Homepage{
   min-height: 100vh;
   width: 100%;
@@ -148,6 +187,9 @@ body{
   background: whitesmoke;
   padding: 0 15px;
 }
+.CMright .input-box textarea::placeholder {  
+  padding-top: 10px; 
+} 
 .CMright .message-box{
   min-height: 100px;
   margin-top: 6px;
