@@ -59,7 +59,7 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <a class="dropdown-item" href="#projects">Recipe Page</a>
-                <a class="dropdown-item" href="#projects">Bank Account</a>
+                <a class="dropdown-item" href="#projects">JS Cheatsheet</a>
               </div>
             </li>
             <li class="nav-item">
@@ -95,7 +95,7 @@
       <div class="container">
         <div class="AMleft">
           <div class="content">
-            <h1>About Me:</h1>
+            <h1 style="color: white">About Me:</h1>
             <br />
             <p>
               I was born in China and moved to San Francisco when I was six. I
@@ -141,32 +141,46 @@
     </section>
 
     <section id="projects">
-      <div>
-        <div>
-          <h1>My Projects</h1>
-        </div>
-        <div>
-          <div class="card" style="width: 18rem">
-            <img class="card-img-top" src="..." alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+      <div class="container">
+        <h1 style="color: white">My Projects</h1>
+      </div>
+      <div class="cardContainer">
+        <div class="card" style="width: 18rem">
+          <img class="card-img-top" src="Images/recipe.png" alt="recipe icon" />
+          <div class="card-body">
+            <h5 class="card-title">Recipe Page</h5>
+            <p class="card-text">
+              I created a recipe page for one of my favorite Chinese dishes of
+              all time, honey walnut shrimp!
+            </p>
+            <a href="#" class="btn custom-card-btn">Recipe Page</a>
           </div>
-          <div class="card" style="width: 18rem">
-            <img class="card-img-top" src="..." alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="Images/js cheatsheet.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">JavaScript Cheatsheet</h5>
+            <p class="card-text">
+              This cheatsheet is a simple cheatsheet to help remind me of simple
+              array methods/basic JavaScript concepts. Check it out!
+            </p>
+            <a href="https://pointed-accordion-535.notion.site/JS-Cheatsheet-a44ad2d6c7d7401d998c6654129768ac" target="_blank" class="btn custom-card-btn">Cheatsheet</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="Images/bank icon.png"
+            alt="recipe icon"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Bank Account</h5>
+            <p class="card-text">In progress.</p>
+            <a href="#" class="btn custom-card-btn">In Progress</a>
           </div>
         </div>
       </div>
@@ -179,18 +193,18 @@
             <div class="address details">
               <i class="material-icons">place</i>
               <div class="topic">Address</div>
-              <div class="text-one">645A 10th AVE</div>
-              <div class="text-two">San Francisco, CA 94118</div>
+              <div class="text-one">#####</div>
+              <div class="text-two">#####</div>
             </div>
             <div class="phone details">
               <i class="material-icons">phonelink_ring</i>
               <div class="topic">Phone</div>
-              <div class="text-one">(415)377-5790</div>
+              <div class="text-one">(415)###-###</div>
             </div>
             <div class="Email details">
               <i class="material-icons">email</i>
               <div class="topic">Email</div>
-              <div class="text-one">serenaqchen@gmail.com</div>
+              <div class="text-one">########@gmail.com</div>
             </div>
           </div>
 
@@ -198,14 +212,14 @@
             <div class="topic-text">Contact Me</div>
             <p>
               Want to reach me? Please fill out this form and I'll get back to
-              you shortly! Thank you!
+              you shortly. Thank you!
             </p>
             <form action="#">
               <div class="input-box">
-                <input type="text" placeholder="Enter your name" />
+                <input type="text" placeholder="Enter your name" required />
               </div>
               <div class="input-box">
-                <input type="text" placeholder="Enter your email" />
+                <input type="text" placeholder="Enter your email" required />
               </div>
               <div class="input-box message-box">
                 <textarea
